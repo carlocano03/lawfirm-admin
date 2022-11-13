@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link href="assets/img/RITM-Logo.png" rel="icon">
-    <title>IVDMD-RITM</title>
+    <link href="assets/img/icon.png" rel="icon">
+    <title>LAWFIRM-ADMIN</title>
     <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -30,9 +30,9 @@
 </head>
 
 <body class="sb-nav-fixed" onload="startTime()">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background: #27ae60;">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background: rgba(0, 13, 8, 1);">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html"><img src="assets/img/ritm-web_v5.png" style="width: 90%;"></a>
+        <a class="navbar-brand ps-3" href="index.html">Dashboard</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
             <i class="fas fa-bars"></i></button>
@@ -71,7 +71,7 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading text-center">
-                            <img src="assets/img/avatar-new.png" alt="Avatar Image">
+                            <img src="assets/img/avatar.png" alt="Avatar Image">
                             <h5>User One</h5>
                             <div class="avatar-text">21-0183</div>
                             <div class="avatar-text mb-1">Sample Department</div>
@@ -80,19 +80,11 @@
                         <hr class="mt-0" style="background: #474787;">
                         <a class="nav-link active" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Main Dashboard
+                            Dashboard
                         </a>
-                        <a class="nav-link" href="IVDMD_secretariat.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
-                            IVDMD Secretariat
-                        </a>
-                        <a class="nav-link" href="technical_review.html">
-                            <div class="sb-nav-link-icon"><i class="bi bi-list-columns-reverse"></i></div>
-                            Technical Review
-                        </a>
-                        <a class="nav-link" href="technical.html">
-                            <div class="sb-nav-link-icon"><i class="bi bi-wallet"></i></div>
-                            Manage Payment
+                        <a class="nav-link" href="">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cogs"></i></div>
+                            Website Settings
                         </a>
                     </div>
                 </div>
@@ -112,7 +104,7 @@
                             <div class="row">
                                 <div class="col-xl-7 col-md-6 mb-5">
                                     <div class="pt-4 ps-3 pe-3 mt-5">
-                                        <h5 class="fw-bold" style="color: #27ae60;">Welcome back, your dashboard is
+                                        <h5 class="fw-bold" style="color: #1e272e;">Welcome back, your dashboard is
                                             ready!</h5>
                                         <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
                                             adipiscing elit,
@@ -125,7 +117,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6">
-                                    <img src="assets/img/dashboard.png" alt="Dashboard-Img"
+                                    <img src="assets/img/Setup Analytics-pana.png" alt="Dashboard-Img"
                                         style="width: 100%; margin-top: -50px;">
                                 </div>
                             </div>
@@ -137,7 +129,7 @@
                             <div class="card card-primary mb-4 guest">
                                 <div class="card-body p-2">
                                     <div class="card-avatar-success me-3">
-                                        <i class="fas fa-list-ul fa-2x mx-auto text-success"></i>
+                                        <i class="fas fa-list-ul fa-2x mx-auto"></i>
                                     </div>
                                     <div class="card-text">
                                         <h5>TOTAL REGISTERED</h5>
@@ -154,7 +146,7 @@
                             <div class="card card-primary mb-4 guest">
                                 <div class="card-body p-2">
                                     <div class="card-avatar-primary me-3">
-                                        <i class="fas fa-chart-bar fa-2x mx-auto text-primary"></i>
+                                        <i class="fas fa-chart-bar fa-2x mx-auto"></i>
                                     </div>
                                     <div class="card-text">
                                         <h5>FOR PAYMENT</h5>
@@ -171,7 +163,7 @@
                             <div class="card card-primary mb-4 guest">
                                 <div class="card-body p-2">
                                     <div class="card-avatar-warning me-3">
-                                        <i class="fas fa-folder-open fa-2x mx-auto text-warning"></i>
+                                        <i class="fas fa-folder-open fa-2x mx-auto"></i>
                                     </div>
                                     <div class="card-text">
                                         <h5>FOR TECHNICAL REVIEW</h5>
@@ -188,7 +180,7 @@
                             <div class="card card-primary mb-4 guest">
                                 <div class="card-body p-2">
                                     <div class="card-avatar-danger me-3">
-                                        <i class="fas fa-calendar-alt fa-2x mx-auto text-danger"></i>
+                                        <i class="fas fa-calendar-alt fa-2x mx-auto"></i>
                                     </div>
                                     <div class="card-text">
                                         <h5>REGISTERED TODAY</h5>
@@ -201,76 +193,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-7 mb-4">
-                            <div class="alert alert-success p-2">New Application Registered - For Review</div>
-                            <div class="table-responsive">
-                                <table class="table" width="100%" id="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Product</th>
-                                            <th>Manufacturer</th>
-                                            <th>Stage</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Product 1</td>
-                                            <td>Manufacturer 1</td>
-                                            <td>Stage 1</td>
-                                            <td>Status 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Product 2</td>
-                                            <td>Manufacturer 2</td>
-                                            <td>Stage 2</td>
-                                            <td>Status 2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 mb-5">
-                            <div class="card">
-                                <div class="card-header text-center"
-                                    style="background: #009879; color: #fff; font-weight: 500;">Status Dashboard</div>
-                                <div class="card-body">
-                                    <table class="table table-bordered" width="100%" id="table_status">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">IVDMD</th>
-                                                <th class="text-center">COMPLETED</th>
-                                                <th class="text-center">STAGE 4</th>
-                                                <th class="text-center">STAGE 3</th>
-                                                <th class="text-center">STAGE 2</th>
-                                                <th class="text-center">STAGE 1</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Rapid Antigen test</td>
-                                                <td>65</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>7</td>
-                                                <td>0</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Rapid Antigen Test (Self-administered)</td>
-                                                <td>32</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>21</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <!-- End of row -->
                 </div>
@@ -279,7 +201,7 @@
             <footer class="py-3 text-white mt-auto" style="background: #fff;">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-secondary">Copyright &copy; Research Institute for Tropical Medicine</div>
+                        <div class="text-secondary">Copyright &copy; Lawfirm Company 2022</div>
                     </div>
                 </div>
             </footer>
