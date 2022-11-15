@@ -16,6 +16,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom-style.css" rel="stylesheet" />
+    <style>
+        #table th:nth-child(1) {
+            width: 20%;
+        }
+        #table th:nth-child(2) {
+            width: 65%;
+        }
+        #table th:nth-child(3) {
+            width: 12%;
+        }
+        #table td:nth-child(3) {
+            text-align: center;
+        }
+    </style>
 
 </head>
 
@@ -67,7 +81,7 @@
                             <a href="" class="logout-btn"><i class="bi bi-power me-1"></i>Logout</a>
                         </div>
                         <hr class="mt-0" style="background: #474787;">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
@@ -96,7 +110,7 @@
                             Case Studies
                         </a>
                         <span class="nav-heading text-muted">Reports</span>
-                        <a class="nav-link" href="inquiry.html">
+                        <a class="nav-link active" href="inquiry.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-archive"></i></div>
                             Inquiry Reports
                         </a>
@@ -117,27 +131,45 @@
                         <li class="breadcrumb-item"><span id="clock"></span></li>
                     </ol>
 
-                    <div class="card card-dashboard">
+                    <div class="card">
+                        <div class="card-header" style="background:#2d3436; color: #fff;">
+                            <i class="fas fa-archive me-2"></i>Inquiry Reports
+                        </div>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-xl-7 col-md-6 mb-5">
-                                    <div class="pt-4 ps-3 pe-3 mt-5">
-                                        <h5 class="fw-bold" style="color: #1e272e;">Welcome back, your dashboard is
-                                            ready!</h5>
-                                        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-                                            ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>
-                                        <button class="btn-started">Get Started<i
-                                                class="fas fa-chevron-right ms-2"></i></button>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6">
-                                    <img src="assets/img/Setup Analytics-pana.png" alt="Dashboard-Img"
-                                        style="width: 100%; margin-top: -50px;">
-                                </div>
+                            <div class="table-reponsive">
+                                <table class="table table-hover" width="100%" cellspacing="0" id="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Inbox</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-user-edit me-2"></i>
+                                                <span class="open-inbox"><a href="view_inquiry.html">Carlo Cano</a></span>
+                                            </td>
+                                            <td>
+                                                <span class="open-inbox"><a href="view_inquiry.html">
+                                                    Subject: Lawfirm consultation booking appointment.....
+                                                </a></span>
+                                            </td>
+                                            <td>Tue Nov 15, 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-user-edit me-2"></i>
+                                                <span class="open-inbox"><a href="view_inquiry.html">Juan Dela Cruz</a></span>
+                                            </td>
+                                            <td>
+                                                <span class="open-inbox"><a href="view_inquiry.html">
+                                                    Subject: Lawfirm consultation booking appointment.....
+                                                </a></span>
+                                            </td>
+                                            <td>Tue Nov 15, 2022</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -166,7 +198,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable({
+                language: {
+                    search: '', searchPlaceholder: "Search Here...",
+                    processing: '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><br>Loading... ',
+                    "info": "_START_-_END_ of _TOTAL_ entries",
+                    paginate: {
+                        next: '<i class="fas fa-chevron-right"></i>',
+                        previous: '<i class="fas fa-chevron-left"></i>'
+                    }
+                },
+                "ordering": false,
+            });
+        });
+    </script>
 </body>
 
 </html>

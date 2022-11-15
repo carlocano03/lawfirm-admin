@@ -264,7 +264,7 @@
 }
 
 .table thead tr {
-    background-color: #009879;
+    background-color: #2d3436;
     color: #ffffff;
     text-align: left;
 }
@@ -284,7 +284,7 @@
 }
 
 .table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #2d3436;
 }
 
 .table tbody tr.active-row {
@@ -378,4 +378,15 @@
 .logout-btn:hover {
     background: #ff4d4d;
     color: #fff;
+}
+
+.open-inbox a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.profile-img img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(2, 42, 113, 0.3);
 }

@@ -12535,7 +12535,6 @@ body {
   border-radius: 25px;
 }
 
-
 .sb-sidenav {
   display: flex;
   flex-direction: column;
@@ -12545,6 +12544,11 @@ body {
 
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav-heading {
+  font-size: 12px;
+  padding: 5px;
 }
 
 .sb-sidenav .sb-sidenav-menu .nav {
@@ -12564,10 +12568,11 @@ body {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   position: relative;
+  font-size: 0.8rem;
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-nav-link-icon {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-sidenav-collapse-arrow {
