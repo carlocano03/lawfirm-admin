@@ -19,141 +19,30 @@
 
 </head>
 
-<body class="sb-nav-fixed" onload="startTime()">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background: rgba(0, 13, 8, 1);">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Dashboard</a>
-        <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
-            <i class="fas fa-bars"></i></button>
-
-        <!-- <div class="d-none d-md-inline-block form-inline order-1 order-lg-0 me-4 me-lg-0 text-white ms-2">IVDMD</div> -->
-        <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></div>
-
-        <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="bi bi-bell-fill"></i>
-                    <span class="position-absolute top-20 start-90 translate-middle badge rounded-pill bg-danger">
-                        1
-                    </span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li class="text-center text-muted">You have 1 notification</li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-
-                    <li class="dropdown-item">
-                        <i class="bi bi-bell-fill"></i>
-                        <p>Hello World</p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                <div class="sb-sidenav-menu">
-                    <div class="nav">
-                        <div class="sb-sidenav-menu-heading text-center">
-                            <img src="assets/img/avatar.png" alt="Avatar Image">
-                            <div class="avatar-text">21-0183</div>
-                            <div class="avatar-text mb-1">Sample Department</div>
-                            <a href="" class="logout-btn"><i class="bi bi-power me-1"></i>Logout</a>
-                        </div>
-                        <hr class="mt-0" style="background: #474787;">
-                        <a class="nav-link active" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Dashboard
-                        </a>
-                        <span class="nav-heading text-muted">Website Settings</span>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-globe"></i></div>
-                            Website
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="#"><i class="fas fa-info-circle me-2"></i>About Us</a>
-                                <a class="nav-link" href="#"><i class="fas fa-blog me-2"></i>Blog/News</a>
-                                <a class="nav-link" href="#"><i class="fas fa-folder-open me-2"></i>Mission/Vision & Values</a>
-                                <a class="nav-link" href="#"><i class="fas fa-photo-video me-2"></i>Corporate Video</a>
-                                <a class="nav-link" href="#"><i class="fas fa-list me-2"></i>Services</a>
-                            </nav>
-                        </div>
-                        <span class="nav-heading text-muted">Attorney</span>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-archive"></i></div>
-                            Practice Area
-                        </a>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
-                            Case Studies
-                        </a>
-                        <span class="nav-heading text-muted">Reports</span>
-                        <a class="nav-link" href="inquiry.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-archive"></i></div>
-                            Inquiry Reports
-                        </a>
-                        <a class="nav-link" href="contact.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
-                            Contact Us Reports
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><span id="date"></span></li>
-                        <li class="breadcrumb-item"><span id="clock"></span></li>
-                    </ol>
-
-                    <div class="card card-dashboard">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-xl-7 col-md-6 mb-5">
-                                    <div class="pt-4 ps-3 pe-3 mt-5">
-                                        <h5 class="fw-bold" style="color: #1e272e;">Welcome back, your dashboard is
-                                            ready!</h5>
-                                        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-                                            ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>
-                                        <button class="btn-started">Get Started<i
-                                                class="fas fa-chevron-right ms-2"></i></button>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6">
-                                    <img src="assets/img/Setup Analytics-pana.png" alt="Dashboard-Img"
-                                        style="width: 100%; margin-top: -50px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </main>
-
-            <footer class="py-3 text-white mt-auto" style="background: #fff;">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-secondary">Copyright &copy; Lawfirm Company 2022</div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+<body class="login-section d-flex align-items-center justify-content-center">
+    <div class="container-login">
+        <form class="login-form" action="dashboard.html">
+            <div class="logo-icon text-center">
+                <img src="assets/img/logo.png">
+            </div>
+            <hr>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+            </div>
+            <div class="mb-3">
+                <a href="#"><i class="bi bi-lock-fill me-1"></i>Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+            <hr>
+            <div class="footer text-center">
+                <p>Lawfirm</p>
+            </div>
+        </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
